@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+
+/* NAVBAR */
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #6b2e8e;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #6b2e8e;
+}
+
+
+/* INTRODUÇÃO */
+
+.introducao {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.introducao h1 {
+    color: #6b2e8e;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.introducao p {
+    font-size: 17px;
+    color: #666;
+}
+
+
+/* QUESTIONÁRIO */
+
+.questionario {
+    width: 600px;
+    max-width: 90%;
+    margin: 20px auto 60px;
+    padding: 35px;
+    background-color: #f5eef8;
+    border-radius: 15px;
+}
+
+.questionario h2 {
+    text-align: center;
+    color: #6b2e8e;
+    margin-bottom: 30px;
+}
+
+.pergunta {
+    margin-bottom: 22px;
+}
+
+.pergunta label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.pergunta select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 15px;
+}
+
+
+/* BOTÃO */
+
+.questionario button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 13px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: #6b2e8e;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.questionario button:hover {
+    background-color: #4f2169;
+}
+.resultado {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+    display: none;
+}
+
+.resultado h3 {
+    color: #6b2e8e;
+    margin-bottom: 15px;
+}
+
+.resultado p {
+    margin: 8px 0;
+    color: #555;
+}
