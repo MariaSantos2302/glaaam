@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GlamBeauty - Entenda seu ciclo</title>
+
+    <link rel="stylesheet" href="../css/entenda.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            GlamBeauty
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="maquiagem.html">Maquiagem</a>
+            <a href="cuidados.html">Cuidados</a>
+            <a href="dicas.html">Dicas</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="introducao">
+
+            <h1>Entenda seu ciclo</h1>
+
+            <p>
+                Responda algumas perguntas para descobrir como
+                sua pele pode mudar durante o seu ciclo.
+            </p>
+
+        </section>
+
+
+        <section class="questionario">
+
+            <h2>Vamos conhecer você?</h2>
+
+            <div class="pergunta">
+
+                <label>Como você considera sua pele?</label>
+
+              <select id="pele">
+    <option>Escolha uma opção</option>
+    <option>Oleosa</option>
+    <option>Seca</option>
+    <option>Mista</option>
+    <option>Normal</option>
+</select>
+
+            </div>
+
+
+            <div class="pergunta">
+
+                <label>O que mais incomoda na sua pele?</label>
+
+                <select id="incomodo">
+    <option>Escolha uma opção</option>
+    <option>Oleosidade</option>
+    <option>Espinhas</option>
+    <option>Ressecamento</option>
+    <option>Poros</option>
+    <option>Nada específico</option>
+</select>
+
+            </div>
+
+
+            <div class="pergunta">
+
+                <label>Como sua pele costuma ficar antes da menstruação?</label>
+
+               <select id="ciclo">
+    <option>Escolha uma opção</option>
+    <option>Mais oleosa</option>
+    <option>Mais seca</option>
+    <option>Aparecem espinhas</option>
+    <option>Não percebo mudanças</option>
+</select>
+
+            </div>
+
+
+            <div class="pergunta">
+
+                <label>Quanto tempo você tem para cuidar da pele?</label>
+
+                <select id="tempo">
+    <option>Escolha uma opção</option>
+    <option>5 minutos</option>
+    <option>10 minutos</option>
+    <option>15 minutos</option>
+    <option>Mais de 15 minutos</option>
+</select>
+
+            </div>
+
+
+            <button onclick="mostrarResultado()">Ver meu resultado</button>
+<div id="resultado" class="resultado"></div>
+        </section>
+
+    </main>
+<script src="../js/entenda.js"></script>
+</body>
+
+</html>

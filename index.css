@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdfbf9;
+    color: #333;
+}
+
+
+
+/* NAVBAR */
+
+nav {
+    width: 100%;
+    height: 75px;
+
+    background-color: #263f3d;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 55px;
+}
+
+
+.logo {
+    color: white;
+}
+
+
+.logo h1 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+
+.logo h1 span {
+    color: #b9a4d8;
+}
+
+
+.logo p {
+    font-size: 7px;
+    letter-spacing: 1px;
+    margin-top: -2px;
+}
+
+
+.links {
+    margin-left: auto;
+
+    display: flex;
+    gap: 40px;
+}
+
+
+.links a {
+    text-decoration: none;
+
+    color: white;
+
+    font-size: 12px;
+
+    transition: 0.3s;
+}
+
+
+.links a:hover {
+    color: #b9a4d8;
+}
+
+
+
+/* PARTE INICIAL */
+
+.inicio {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 70px;
+
+    padding: 45px 8%;
+}
+
+
+
+/* IMAGEM */
+
+.imagem {
+    width: 340px;
+    height: 390px;
+
+    overflow: hidden;
+
+    border-radius: 170px 170px 0 0;
+
+    background-color: #b9a4d8;
+}
+
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/* TEXTO */
+
+.texto {
+    width: 450px;
+}
+
+
+.texto h2 {
+    font-family: Georgia, serif;
+
+    font-size: 43px;
+
+    line-height: 1.1;
+
+    color: #354d4b;
+
+    margin-bottom: 20px;
+}
+
+
+.texto p {
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #555;
+
+    max-width: 390px;
+
+    margin-bottom: 25px;
+}
+
+
+
+/* BOTÕES */
+
+.botoes {
+    display: flex;
+
+    gap: 12px;
+
+    align-items: center;
+}
+
+
+.texto button {
+    padding: 11px 18px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+
+/* BOTÃO CADASTRO */
+.botao-principal {
+    display: inline-block;
+    background-color: #005c05;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* BOTÃO ENTENDA SEU CICLO */
+
+.botao-ciclo {
+    display: inline-block;
+
+    background-color: #7542e8;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 18px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.botao-ciclo:hover {
+    background-color: #3d6964;
+}
+
+
+
+/* CARDS */
+
+.cards {
+    width: 100%;
+
+    display: flex;
+
+    min-height: 180px;
+}
+
+
+.card {
+    flex: 1;
+
+    padding: 35px 45px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.card.roxo {
+    background-color: #a995c7;
+
+    color: white;
+}
+
+
+.card.branco {
+    background-color: #fdfbf9;
+
+    color: #354d4b;
+}
+
+
+.card h2 {
+    font-family: Georgia, serif;
+
+    font-size: 21px;
+
+    margin-bottom: 12px;
+}
+
+
+.card p {
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    max-width: 280px;
+}
+
+
+
+/* CELULAR / TABLET */
+
+@media (max-width: 900px) {
+
+    nav {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .links {
+        margin-left: 0;
+
+        gap: 25px;
+    }
+
+
+    .inicio {
+        flex-direction: column;
+
+        padding: 50px 25px;
+
+        text-align: center;
+    }
+
+
+    .imagem {
+        width: 300px;
+
+        height: 350px;
+    }
+
+
+    .texto {
+        width: 100%;
+
+        max-width: 500px;
+    }
+
+
+    .texto p {
+        margin-left: auto;
+
+        margin-right: auto;
+    }
+
+
+    .botoes {
+        justify-content: center;
+    }
+
+
+    .cards {
+        flex-direction: column;
+    }
+
+
+    .card {
+        min-height: 170px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+}
+
+
+
+/* CELULAR PEQUENO */
+
+@media (max-width: 500px) {
+
+    .links {
+        gap: 15px;
+    }
+
+
+    .links a {
+        font-size: 10px;
+    }
+
+
+    .imagem {
+        width: 260px;
+
+        height: 310px;
+    }
+
+
+    .texto h2 {
+        font-size: 34px;
+    }
+
+
+    .botao-ciclo {
+        padding: 11px 18px;
+
+        font-size: 10px;
+    }
+
+}
